@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form pendaftaran</title>
+		</head>
+		<body background="gambar/udinussmg.jpg" style="height: 100%">
+		<style>
+			.wrap{
+				width:800px;
+				margin: 10px auto;
+				padding: 1px;
+				}
+		</style>
+	<div class="wrap">
+		<img src="udinuss.jpeg" width="800px">
+	</div>
+	<div class="wrap" style="background-color:#F5FFFA">
+			<h1 style="background-color:#B0E0E6" align="center">Formulir Pendaftaran Mahasiswa Baru</h1>
+		<form name="fmhs" action="proses.php" method="post">
+			<table width="750" align="center">
+				<h3 style="background-color:Navy"><p style="color:white;" align="center">Data Pribadi</p></h3>
+				<tr>
+					<td><b>No. Pendaftaran</b></td>
+					<td>:
+					<input type="Number" name="fno" class="form-control" placeholder="Masukkan No.Pendaftaran"></td>
+				</tr>
+				<tr>
+					<td><b>Program Studi</b></td>
+					<td>:
+					<select name="fprodi" required>
+							<option>-Pilih-</option>
+							<option>S1-Teknik Informatika</option>
+							<option>S1-Sistem Informasi</option>
+							<option>S1-Ilmu Komunikasi</option>
+							<option>S1-Film dan Televisi</option>
+							<option>S1-Sastra Inggris</option>
+							<option>S1-Sastra Jepang</option>
+							<option>S1-Manajemen</option>
+							<option>S1-Akuntansi</option>
+							<option>S1-Teknik Industri</option>
+							<option>S1-Teknik Elektro</option>
+							<option>S1-Teknik Biomedis</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><b>Nama Lengkap</b></td>
+					<td>:
+					<input type="Text" name="fnama" class="form-control" placeholder="Masukkan Nama Lengkap"></td>
+				</tr>
+				<tr>
+					<td><b>Jenis Kelamin</b></td>
+					<td>:
+					<input type="radio" name="fjk" value="Laki-laki">Laki-laki
+					<input type="radio" name="fjk" value="Perempuan">Perempuan
+				</tr>
+				<tr>
+					<td><b>Tempat/Tanggal Lahir</b></td>
+					<td>:
+					<input type="Text" name="ftempat_lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+					<input type="date" name="ftanggal_lahir" required></td>
+				</tr>
+				<tr>
+					<td><b>Agama</b></td>
+					<td>:
+					<select name="agama" required>
+							<option>-Pilih-</option>
+							<option>ISLAM</option>
+							<option>KRISTEN</option>
+							<option>KATOLIK</option>
+							<option>HINDU</option>
+							<option>BUDHA</option>
+							<option>KONGHUCU</option>
+						</select></td>
+				</tr>
+				<tr>
+					<td><b>Pas Foto</b></td>
+					<td>:
+					<input type="file" name="ffile" required></td>
+				</tr>
+				<tr>
+					<td><b>Alamat</b></td>
+					<td>:
+					<textarea cols="40" rows="5" name="falamat"class="form-control" placeholder="Masukkan Alamat"></textarea></td>
+				</tr>
+				<tr>
+					<td><b>Kode Pos</b></td>
+					<td>:
+					<input type="number" name="fkp" class="form-control" placeholder="Masukkan Kode Pos"></td>
+				</tr>
+				<tr>
+					<td><b>Asal Sekolah</b></td>
+					<td>:
+					<select name="fasal_sekolah" required>
+							<option>-Pilih-</option>
+							<option>SMA KOLESE LOYOLA</option>
+							<option>SMA IBU KARTINI</option>
+							<option>SMA TEUKU UMAR</option>
+							<option>SMA TERANG BANGSA</option>
+							<option>SMA SETIABUDHI</option>
+							<option>SMA NUSA BHAKTI</option>
+							<option>SMA RONGGOLAWE</option>
+							<option>SMA NASIMA</option>
+							<option>SMA KARANG TURI</option>
+							<option>SMA THERESIANA</option>
+							<option>SMA DON BOSKO</option>
+							<option>SMA PERMATA BANGSA</option>
+							<option>SMA NASIONAL</option>
+							<option>SMA KARANG TURI</option>
+							<option>SMA SEMESTA</option>
+							<option>SMA KRISTEN YSKI</option>
+							<option>SMA AGUS SALIM</option>
+							<option>SMA NEGERI 1</option>
+							<option>SMA NEGERI 2</option>
+							<option>SMA NEGERI 3</option>
+							<option>SMA NEGERI 4</option>
+							<option>SMA NEGERI 5</option>
+					</select>
+					Tahun Lulus:
+					<select name="ftahun_lulus" required>
+							<option>-Pilih-</option>
+							<option>2022</option>
+							<option>2021</option>
+							<option>2020</option>
+							<option>2019</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><b>No. HP</b></td>
+					<td>:
+					<input type="Number" name="fno_hp" class="form-control" placeholder="Masukkan Nomor HP"></td>
+				</tr>
+				<tr>
+					<td><b>E-mail</b></td>
+					<td>:
+					<input type="Text" name="email" class="form-control" placeholder="Masukkan Alamat E-mail"></td>
+				</tr>
+			</table>
+			<table width="750" align="center">
+				<h3 style="background-color:Navy"><p style="color:white;" align="center">Data Orang tua</p></h3>
+				<tr>
+					<td><b>Nama Ayah</b></td>
+					<td>:
+					<input type="text" name="fnm_ayah" class="form-control" placeholder="Masukkan Nama Lengkap"></td>
+				</tr>
+				<tr>
+					<td><b>Tempat/Tanggal Lahir</b></td>
+					<td>:
+					<input type="Text" name="ftempat_lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+					<input type="date" name="ftanggal_lahir" required></td>
+				</tr>
+				<tr>
+					<td><b>Pekerjaan Ayah</b></td>
+					<td>:
+					<select name="fpekerjaan_ayah" required>
+							<option>-Pilih-</option>
+							<option>Belum/Tidak bekerja</option>
+							<option>Karyawan Swasta</option>
+							<option>Buruh</option>
+							<option>Pegawai Negeri Sipil</option>
+							<option>Petani</option>
+							<option>Wiraswasta</option>
+							<option>Guru</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><b>Nama Ibu</b></td>
+					<td>:
+					<input type="Text" name="fnama_ibu" class="form-control" placeholder="Masukkan Nama Lengkap"></td>
+				</tr>
+				<tr>
+					<td><b>Tempat/Tanggal Lahir</b></td>
+					<td>:
+					<input type="Text" name="ftempat_lahir" class="form-control" placeholder="Masukkan Tempat Lahir">
+					<input type="date" name="ftanggal_lahir" required></td>
+				</tr>
+				<tr>
+					<td><b>Pekerjaan Ibu</b></td>
+					<td>:
+					<select name="fpekerjaan_ibu" required>
+							<option>-Pilih-</option>
+							<option>Belum/Tidak bekerja</option>
+							<option>Karyawan Swasta</option>
+							<option>Buruh</option>
+							<option>Pegawai Negeri Sipil</option>
+							<option>Petani</option>
+							<option>Wiraswasta</option>
+							<option>Guru</option>
+							<option>Mengurus Rumah Tangga</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><b>Alamat</b></td>
+					<td>:
+					<textarea cols="40" rows="5" name="falamat"class="form-control" placeholder="Masukkan Alamat"></textarea></td>
+				</tr>
+				<tr>
+					<td><b>No. HP</b></td>
+					<td>:
+					<input type="Number" name="fno_hp" class="form-control" placeholder="Masukkan Nomor HP"></td>
+				</tr>
+				<tr>
+					<td><center>
+					<input type="submit" name="submit" value="Kirim">
+					<input type="reset"></center></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
